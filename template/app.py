@@ -1,7 +1,7 @@
 from flask import Flask, render_template, Response, jsonify, request
 import settings
 import time
-import numpy as np
+#import numpy as np
 import datetime
 import base64
 import subprocess
@@ -71,5 +71,5 @@ def api_query_task():
 
 if __name__ == '__main__':
     # app.run(host='0.0.0.0', port=443, threaded=True, ssl_context=('/etc/letsencrypt/live/adam.sobmonitor.org/fullchain.pem','/etc/letsencrypt/live/adam.sobmonitor.org/privkey.pem'))
-    app.run(host='0.0.0.0', port=80, threaded=True, debug=True)
+    app.run(host='0.0.0.0', port=8080, threaded=True, debug=True)
     log.debug("Started up analysis app")
